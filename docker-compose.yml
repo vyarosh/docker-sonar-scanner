@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+
+  maven:
+    build:
+      context: ./mvn
+    container_name: docker_maven
+    volumes:
+      - ./../:/project
+    tty: true
